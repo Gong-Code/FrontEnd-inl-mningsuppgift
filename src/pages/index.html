@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Course">
+    <meta name="keywords" content="HTML, CSS, Tailwind">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec115afac4.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-200 font-sans flex flex-col items-center">
+    
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center 
+    bg-indigo-700 shadow h-screen">
+        <div class="text-gray-100 text-xl">
+            <div class="p-2.5 mt-1 flex justify-center items-center border-b-2 border-pink-500">                
+                <i class="fa-solid fa-code px-2 py-1 text-pink-500" ></i>
+                <h1 class="text-[15px] font-bold flex text-indigo-100 ml-3">Learn Frontend</h1>                    
+            </div>
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 bg-indigo-300 
+            cursor-pointer text-white hover:bg-indigo-300">
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                <input type="text" placeholder="Search" class="text-[15px] w-full bg-transparent 
+                ml-4 focus:outline-none placeholder-white" />               
+            </div>
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-300">
+                <i class="fa-solid fa-house"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="index.html" alt="Home Page"><a href="/src/pages/index.html">Home</a></a></span>
+                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-brands fa-leanpub"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="/src/pages/index.html">All Courses</a></span>                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-plus"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="/src/pages/form.html">Create a course</a></span>                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-people-group"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="/src/pages/about-us.html">About us</a></span>                
+            </div>
+            
+            <hr class="my-4 border-b-[1px] border-pink-500">
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="index.html" alt="Home Page">Log Out</a></span>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <header class="bg-indigo-700 w-full px-4 py-3 flex justify-center items-start border-b-4 border-pink-500">
+        <div class="my-4 ">
+                <h1 class="text-2xl text-indigo-100">Want to learn Frontend?</h1>
+                <p class="text-sm text-indigo-200">Frontend developer: Creates user-friendly website interfaces using HTML, CSS, and JavaScript.</p>
+
+                <div class="relative mt-4 flex justify-between">
+                    <div>
+                        <a href="#" 
+                        class="bg-pink-500 font-bold text-indigo-100 mt-2 px-4 py-2 uppercase rounded-full
+                            text-sm
+                        ">Enroll Now</a>                        
+                    </div>
+                </div>
+                
+            </div>
+    </header>
+
+    <main class="mt-16 flex justify-self-end items-center w-full lg:w-[calc(100%-300px)] ml-0 lg:ml-[300px]">
+        <div class="relative max-w-4xl mx-auto px-4 lg:px-0">
+            <div class="bg-white rounded-full flex justify-center items-center border-4 p-5
+                border-pink-500 absolute top-[-7.5rem] right-0">
+                <img class="object-contain w-16 h-16" src="/src/images/front-end.png"/>
+            </div>
+            <h2 class="pb-1 font-bold text-xl text-indigo-700 border-b border-gray-400">
+                What is Frontend?
+            </h2>
+            <p class="text-xs mt-4"> A frontend developer is a professional who specializes in creating the user interface and user experience of a website or web application. 
+                They use programming languages such as HTML, CSS, and JavaScript to implement the design and interactivity specified by a web designer. 
+                Frontend developers are responsible for ensuring that a website's visual elements and functionality are engaging, responsive, and user-friendly across various devices and browsers. 
+                They collaborate closely with designers and backend developers to bring a cohesive and functional web project to life.
+            </p>
+
+            <h2 class="mt-8 pb-1 font-bold text-xl text-indigo-700 border-b border-gray-400">Courses</h2>
+
+            <div class="flex flex-wrap flex-col sm:flex-row ">
+                <div class="mt-4 sm:w-1/3 ">
+                    <div class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center 
+                    sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 w-16 rounded-full p-2">
+                            <img src="/src/images/html-5.png" alt="image of html icon" />
+                        </diV>
+                        <div class="mt-3 font-bold">HTML</div>                       
+                        <div class="text-center mt-2 text-gray-600 text-sm ">HTML (Hypertext Markup Language): Standard markup language for creating and structuring web content.</div> 
+                        <div class="p-1.5 flex flex-col items-center mt-4">                            
+                            <button class="rounded-md px-3 py-1 bg-indigo-700 
+                            hover:bg-indigo-400 hover:shadow-2xl cursor-pointer text-white hover:drop-shadow-2xl">
+                                <p><a href="./detail.html">Join Lesson</a></p>
+                            </button>
+                            <p class="text-gray-400 mt-2 text-xs">Last updated: 17-10-2023</p>
+                            <p class="text-xs text-white bg-pink-500 text border px-3 py-2 mt-2 rounded">Category: Programming language</p>
+                        </div>                                                                     
+                    </div>
+                </div>
+
+                <div class="mt-4 sm:w-1/3 ">
+                    <div class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center 
+                    sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 w-16 rounded-full p-2 ">
+                            <img src="/src/images/css-3.png" alt="image of CSS icon" />
+                        </diV>
+                        <div class="mt-4 font-bold">CSS</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">CSS (Cascading Style Sheets): Styles web content, defining its visual presentation, layout, and design.</div> 
+                        <div class="p-1.5 flex flex-col items-center mt-8">
+                            <button class="rounded-md px-3 py-1 bg-indigo-700 
+                            cursor-pointer text-white hover:bg-indigo-400 hover:drop-shadow-2xl">
+                                <a href="./detail.html" class="">Join Lesson</a>
+                            </button>
+                            <p class="text-gray-400 mt-2 text-xs">Last updated: 17-10-2023</p>
+                            <p class="text-xs text-white bg-pink-500 text border px-3 py-2 mt-2 rounded">Category: Programming language</p>
+                        </div>                         
+                    </div>
+                </div>
+
+                
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center 
+                    sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 w-16 rounded-full p-2 ">
+                            <img src="/src/images/javascript-icon.png" alt="image of JavaScript icon" />
+                        </diV>
+                        <div class="mt-4 font-bold">JavaScript</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">JavaScript: Programming language that enables dynamic and interactive behavior on websites.
+                        </div>
+                        <div class="p-1.5 flex flex-col items-center mt-8">
+                            <button class="rounded-md px-3 py-1 bg-indigo-700 
+                            cursor-pointer text-white hover:bg-indigo-400 hover:drop-shadow-2xl">
+                                <a href="./detail.html" class="">Join Lesson</a>
+                            </button>
+                            <p class="text-gray-400 mt-2 text-xs">Last updated: 17-10-2023</p>
+                            <p class="text-xs text-white bg-pink-500 text border px-3 py-2 mt-2 rounded">Category: Programming language</p>
+                        </div>                                     
+                    </div>
+                </div>
+                
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center 
+                    sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 w-16 rounded-full p-2 ">
+                            <img src="/src/images/react.png" alt="image of react icon" />
+                        </diV>
+                        <div class="mt-4 font-bold">React</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">React: JavaScript library for building user interfaces, focusing on component-based development for efficient and reusable code.</div>
+                        <div class="p-1.5 flex flex-col items-center mt-8">
+                            <button class="rounded-md px-3 py-1 bg-indigo-700 
+                            cursor-pointer text-white hover:bg-indigo-400 hover:drop-shadow-2xl">
+                                <a href="./detail.html" class="">Join Lesson</a>
+                            </button>
+                            <p class="text-gray-400 mt-2 text-xs">Last updated: 17-10-2023</p>
+                            <p class="text-xs text-white bg-pink-500 text border px-3 py-2 mt-2 rounded">Category: Programming language</p>
+                        </div>                                       
+                    </div>
+                </div>
+
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center 
+                    sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 w-16 rounded-full p-2 ">
+                            <img src="/src/images/tailwind.png" alt="image of tailwind icon"/>
+                        </diV>
+                        <div class="mt-4 font-bold">Tailwind</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">Tailwind CSS: Utility-first CSS framework that simplifies styling by providing low-level utility classes for quick and customizable design implementation.</div>
+                        <div class="p-1.5 flex flex-col items-center mt-8">
+                            <button class="rounded-md px-3 py-1 bg-indigo-700 
+                            cursor-pointer text-white hover:bg-indigo-400 hover:drop-shadow-2xl">
+                                <a href="./detail.html" class="">Join Lesson</a>
+                            </button>
+                            <p class="text-gray-400 mt-2 text-xs">Last updated: 17-10-2023</p>
+                            <p class="text-xs text-white bg-pink-500 text border px-3 py-2 mt-2 rounded">Category: Programming language</p>
+                        </div>                                        
+                    </div>
+                </div>
+
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white h-full p-8 border-b-4 border-pink-500 rounded-lg flex flex-col items-center 
+                    sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 w-16 rounded-full p-2 ">
+                            <img src="/src/images/git-icon.png" alt="image of git icon"/>
+                        </diV>
+                        <div class="mt-4 font-bold">Git</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">
+                            Git: Version control system for tracking code changes and facilitating collaboration in software development, version management, and code history.</div> 
+                            <div class="p-1.5 flex flex-col items-center mt-8">
+                                <button class="rounded-md px-3 py-1 bg-indigo-700 
+                                cursor-pointer text-white hover:bg-indigo-400 hover:drop-shadow-2xl">
+                                    <a href="#" class="">Join Lesson</a>
+                                </button>
+                                <p class="text-gray-400 mt-2 text-xs">Last updated: 17-10-2023</p>
+                                <p class="text-xs text-white bg-pink-500 text border px-3 py-2 mt-2 rounded">Category: Programming language</p>
+                            </div>                                        
+                    </div>
+                </div>
+
+            </div>
+        </div>        
+        </div>
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>

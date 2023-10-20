@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec115afac4.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-800 font-sans flex flex-col items-center">
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center 
+    bg-indigo-700 shadow h-screen">
+        <div class="text-gray-100 text-xl">
+            <div class="p-2.5 mt-1 flex justify-center items-center border-b-2 border-pink-500">                
+                <i class="fa-solid fa-code px-2 py-1 text-pink-500" ></i>
+                <h1 class="text-[15px] font-bold flex text-indigo-100 ml-3">Learn Frontend</h1>                    
+            </div>
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 bg-indigo-300 
+            cursor-pointer text-white hover:bg-indigo-600">
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                <input type="text" placeholder="Search" class="text-[15px] w-full bg-transparent 
+                ml-4 focus:outline-none placeholder-white" />               
+            </div>
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+                <i class="fa-solid fa-house"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="index.html" alt="Home Page">Home</a></span>
+                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-brands fa-leanpub"></i>
+                <span class="text-[15px] text-indigo-100 ml-4">All Courses</span>                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-plus"></i>
+                <span class="text-[15px] text-indigo-100 ml-4">Create a course</span>                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-people-group"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="/src/pages/about-us.html">About us</a></span>                
+            </div>
+            
+            <hr class="my-4 border-b-[1px] border-pink-500">
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="index.html" alt="Home Page">Log Out</a></span>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class=" w-full flex flex-col items-center border-t-2 border-black">
+        <h2 class="font-bold text-xl text-gray-400">Create course</h2>
+
+        <form class="max-w-xl w-full text-gray-200 mt-4 px-8 ms:px-0" action="#" method="post">
+            <div class="flex flex-col md:flex-row md:-mx-2">
+                <label for="first_name" class="sr-only">First Name</label>
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="text" placeholder="First name" id="first_name">
+                
+                <label for="last_name" class="sr-only">Last Name</label>
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="text" placeholder="Last name" id="last_name">
+            </div>
+            <div class="flex flex-col md:flex-row md:-mx-2">
+                <label for="email" class="sr-only">Email address</label>
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="email" placeholder="gong@email.com" id="email">
+                
+                <label for="title" class="sr-only">Date</label>
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="date" placeholder="Date" id="date">
+            </div>
+            
+            <div class="flex flex-col text-center md:flex-row md:-mx-2 mt-4 ">
+                <select id="type-customer" class="bg-gray-700 w-full border border-gray-600 rounded-lg py-2 px-4 text-sm 
+                text-gray-400">
+                    <option disabled selected value> -- type of course -- </option>
+                    <option value="Private">Programming language</option>
+                    <option value="Studen">Framework</option>
+                    <option value="Company">Other</option>
+                </select>                            
+            </div>
+
+            <div class="flex flex-col md:flex-row md:-mx-2 mt-4 ">
+                <textarea id="describe" rows="4" class="w-full bg-gray-700  px-1" placeholder="describe the course"></textarea>                
+            </div>
+
+            <div class="flex flex-col md:flex-row md:-mx-2">
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="file" id="input-file">
+                
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="file" placeholder="Date" id="date">
+                
+            </div>
+
+            <div class="flex flex-col md:flex-row md:-mx-2">
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="file" id="input-file">
+                
+                <input class="bg-gray-700 mt-4 border border-gray-600 rounded-lg py-2 px-4 w-full md:mx-2" 
+                type="file" placeholder="Date" id="date">
+                
+            </div>
+                        
+            <div class="flex flex-col md:flex-row md:-mx-2">
+                <button class="bg-blue-600 text-sm mt-5 rounded-lg px-4 py-2 
+                w-full md:mx-2">Create</button>
+            </div>
+            
+            <div class="flex flex-col items-center font-bold mt-8">
+                <div >                
+                    <ul class="list-disc flex flex-col mt-4">                        
+                        <list class="text-sm">Build a simple HTML text site.</list>
+                        <list class="text-sm">Style web pages using CSS.</list>
+                        <list class="text-sm">Program websites with JavaScript.</list>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

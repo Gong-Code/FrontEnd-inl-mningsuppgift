@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec115afac4.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-200 font-sans flex flex-col items-center">
+    <div class="sidebar fixed top-0 bottom-0 lg:left-0 left-[-300px] p-2 w-[300px] overflow-y-auto text-center 
+    bg-indigo-700 shadow h-screen">
+        <div class="text-gray-100 text-xl">
+            <div class="p-2.5 mt-1 flex justify-center items-center border-b-2 border-pink-500">                
+                <i class="fa-solid fa-code px-2 py-1 text-pink-500" ></i>
+                <h1 class="text-[15px] font-bold flex text-indigo-100 ml-3">Learn Frontend</h1>                    
+            </div>
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 duration-300 curosor-pointer bg-indigo-300 
+            cursor-pointer text-white hover:bg-indigo-600">
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                <input type="text" placeholder="Search" class="text-[15px] w-full bg-transparent 
+                ml-4 focus:outline-none placeholder-white" />               
+            </div>
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 duration-300 curosor-pointer bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+                <i class="fa-solid fa-house"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="index.html" alt="Home Page">Home</a></span>
+                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 duration-300 curosor-pointer bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-brands fa-leanpub"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="./index.html">All Courses</a></span>                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 duration-300 curosor-pointer bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-plus"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="./form.html">Create a course</a></span>                
+            </div>
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4  bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-people-group"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="/src/pages/about-us.html">About us</a></span>                
+            </div>
+            
+            <hr class="my-4 border-b-[1px] border-pink-500">
+
+            <div class="p-1.5 mt-3 flex items-center rounded-md px-4 duration-300 curosor-pointer bg-indigo-700 
+            cursor-pointer text-white hover:bg-indigo-600">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="text-[15px] text-indigo-100 ml-4"><a href="index.html" alt="Home Page">Log Out</a></span>
+                
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+    <header class="bg-indigo-700 w-full px-4 py-3 flex justify-center items-start border-b-4 border-pink-500">
+        <div class="my-4 ">
+                <h1 class="text-2xl text-indigo-100">Web dev basics</h1>
+                <p class="text-sm text-indigo-200">Learn the very basics of HTML. Start creating layouts, and then style them with CSS how you want.</p>              
+                
+        </div>
+    </header>
+
+    <main class="mt-16 w-full flex flex-col items-center sm:-mx-2">
+        <div class="max-w-4xl mx-4">
+            <h2 class="pb-1 font-bold text-xl text-indigo-700 border-b border-gray-400">
+                Introduction to HTML
+            </h2>
+            <ul class="space-y-4 text-indigo-500 list-disc list-inside">
+                <li>Understanding the basic structure of an HTML document.</li>
+                <li>Tags, elements, and attributes.</li>
+            </ul>
+
+            <h2 class="pb-1 font-bold text-xl mt-3 text-indigo-700 border-b border-gray-400">
+                Document Structure
+            </h2>
+            <ul class="space-y-4 text-indigo-500 list-disc list-inside">
+                <li>Head and body elements.</li>
+                <li>Tags, elements, and attributes.</li>
+            </ul>
+
+            <h2 class="pb-1 font-bold text-xl mt-3 text-indigo-700 border-b border-gray-400">
+                Lists and Tables
+            </h2>
+            <ul class="space-y-4 text-indigo-500 list-disc list-inside ">
+                <li>Creating ordered and unordered lists.</li>
+                <li>Constructing simple tables.</li>
+            </ul>
+
+            <h2 class="pb-1 font-bold text-xl mt-3 text-indigo-700 border-b border-gray-400">
+                Links and Forms
+            </h2>
+            <ul class="space-y-4 text-indigo-500 list-disc list-inside ">
+                <li>Creating hyperlinks.</li>
+                <li>Building basic forms for user input.</li>
+            </ul>
+
+            <h2 class="mt-8 pb-1 font-bold text-xl text-indigo-700 border-b border-gray-400">Courses</h2>
+
+            
+
+            <div class="flex flex-row items-center sm:flex-row cursor-pointer">
+                <div class="mt-4 sm:w-1/3">
+                    <div class="bg-white hover:bg-gray-300 hover:scale-110 transition duration-500 object-cover h-full p-8 border-b-4 
+                    border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 w-16 rounded-full p-2">
+                            <img src="/src/images/html-5.png" alt="html lesson 1"/>
+                        </diV>
+                        <div class="mt-4 font-bold">Lesson 1</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm ">Understanding the basic structure of an HTML document.</div>
+                        <div class="text-center mt-2 text-indigo-500 font-semibold text-xs">
+                            <p class=" ">Category: Programming language</p>
+                        </div>            
+                        <div class="text-center mt-2 text-xs">
+                            <p class="text-gray-500">Last updated: 19-10-2023</p>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="mt-4 sm:w-1/3 text-center cursor-pointer">
+                    <div class="bg-white hover:bg-gray-300 hover:scale-110 transition drutation-500 object-cover h-full p-8 border-b-4 
+                    border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 text-indigo-700 w-16 rounded-full p-2 ">
+                            <img src="/src/images/html-5.png" alt="html lesson 2"/>
+                        </diV>
+                        <div class="mt-4 font-bold hover:">Lesson 2</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm"> In HTML, tags are keywords surrounded by angle brackets.</div>   
+                        <div class="text-center mt-2 text-indigo-500 font-semibold text-xs">
+                            <p class=" ">Category: Programming language</p>
+                        </div>            
+                        <div class="text-center mt-2 text-xs">
+                            <p class="text-gray-500">Last updated: 19-10-2023</p>
+                        </div>           
+                    </div>
+                </div>
+
+                
+                <div class="mt-4 sm:w-1/3 cursor-pointer">
+                    <div class="bg-white hover:bg-gray-300 hover:scale-110 transition drutation-500 object-cover h-full p-8 border-b-4 
+                    border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 text-indigo-700 w-16 rounded-full p-2 ">
+                            <img src="/src/images/html-5.png" alt="html lesson 3"/>
+                        </diV>
+                        <div class="mt-4 font-bold">Lesson 3</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">Lists are versatile for organizing information cleanly on a webpage.
+                        </div>
+                        <div class="text-center mt-2 text-indigo-500 font-semibold text-xs">
+                            <p class=" ">Category: Programming language</p>
+                        </div>            
+                        <div class="text-center mt-2 text-xs">
+                            <p class="text-gray-500">Last updated: 19-10-2023</p>
+                        </div>               
+                    </div>
+                </div>                                          
+
+                <div class="mt-4 sm:w-1/3 cursor-pointer">
+                    <div class="bg-white hover:bg-gray-300 hover:scale-110 transition drutation-500 object-cover h-full p-8 border-b-4 
+                    border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8">
+                        <diV class="bg-gray-200 text-indigo-700 w-16 rounded-full p-2 ">
+                            <img src="/src/images/html-5.png" alt="html lesson 4"/>
+                        </diV>
+                        <div class="mt-4 font-bold">Lesson 4</div>
+                        <div class="text-center mt-2 text-gray-600 text-sm">Creating hyperlinks in HTML is done with the <a> (anchor) element.</div> 
+                        <div class="text-center mt-2 text-indigo-500 font-semibold text-xs">
+                            <p class=" ">Category: Programming language</p>
+                        </div>            
+                        <div class="text-center mt-2 text-xs">
+                            <p class="text-gray-500">Last updated: 19-10-2023</p>
+                        </div>               
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+</body>
+</html>
